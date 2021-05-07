@@ -10,7 +10,7 @@ It can be automated to send notifications. I am using MS teams notifications.
 
 ## Usage
 
-1.  Get state dd for your state 
+1.  Get state_id for your state 
 
 ```
 {
@@ -167,9 +167,10 @@ It can be automated to send notifications. I am using MS teams notifications.
 }
 ```
 
-2. Get district id from state id 
+2. Get district_id from state_id 
+> Copy this URL and update state_id (use state_id from step 1) 
 > https://cdn-api.co-vin.in/api/v2/admin/location/districts/{state_id}
-> Where, use state_id from step 1. 
+> Paste on browser and hit enter.  
 
 3. Get district_id from response from above.
 ```
