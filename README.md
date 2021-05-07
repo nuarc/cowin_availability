@@ -1,5 +1,6 @@
-# cowin_availability
-This project contains simple script to find COVID vaccine availability, this can be automated to send notifications. I am using MS teams notifications.
+# COVID vaccines availability in INDIA
+This project contains simple script to find COVID vaccine availability in India. 
+It can be automated to send notifications. I am using MS teams notifications.
 
 ## Pre-requisites
 
