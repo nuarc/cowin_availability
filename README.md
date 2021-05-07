@@ -191,5 +191,5 @@ It can be automated to send notifications. I am using MS teams notifications.
   "ttl": 24
 }
 ```
-5. Update district_ids in script to match your areas, you can 
+5. Update district_ids in script line #10
 6. Execute>> python call_cowin.py
