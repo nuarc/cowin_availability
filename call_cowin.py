@@ -10,9 +10,8 @@ d1 = today.strftime("%d-%m-%Y")
 district_ids = ["143", "146"]  # north west delhi, north delhi
 webhook_url = "" # USE WEBHOOK, here i am using MS teams 
 
-available_centers = []
-
 for id in district_ids:
+    available_centers = []
     query = {'date': d1, 'district_id': id}
     headers = {"User-Agent": "PostmanRuntime/7.26.10"}
     url = f"https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict"
