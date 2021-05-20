@@ -32,9 +32,9 @@ def check():
                 if session["min_age_limit"] == 18 and session["available_capacity"] > 0:
                     c = {'name': name, 'address': address, 'pincode': pincode, 'district_name': district_name,
                          "capacity": session["available_capacity"], "date": session["date"],
-                         "vaccine": session["vaccine"]}
+                         "vaccine": session["vaccine"], "available_capacity_dose1":session["available_capacity_dose1"],
+                         "available_capacity_dose2":session["available_capacity_dose2"]}
                     available_centers.append(c)
-                    break
     if len(available_centers) > 0:
         print(available_centers)
         myTeamsMessage = pymsteams.connectorcard(webhook_url)
