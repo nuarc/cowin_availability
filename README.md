@@ -1,5 +1,5 @@
 # COVID vaccines availability in INDIA
-This project contains simple script to find COVID vaccine availability in India. 
+This project contains simple script to find COVID vaccine availability in India.
 It can be automated to send notifications. I am using MS teams notifications.
 
 ## Pre-requisites
@@ -10,7 +10,7 @@ It can be automated to send notifications. I am using MS teams notifications.
 
 ## Usage
 
-1.  Get state_id for your state 
+1.  Get state_id for your state
 
 ```
 {
@@ -167,10 +167,10 @@ It can be automated to send notifications. I am using MS teams notifications.
 }
 ```
 
-2. Get district_id from state_id 
-> Copy this URL and update state_id (use state_id from step 1) 
+2. Get district_id from state_id
+> Copy this URL and update state_id (use state_id from step 1)
 > https://cdn-api.co-vin.in/api/v2/admin/location/districts/{state_id}
-> Paste on browser and hit enter.  
+> Paste on browser and hit enter.
 
 3. Get district_id from response from above.
 ```
@@ -192,5 +192,10 @@ It can be automated to send notifications. I am using MS teams notifications.
   "ttl": 24
 }
 ```
-5. Update district_ids in script line #10
+5. Update district_ids in script line #11
 6. Execute>> python call_cowin.py
+
+   ![output](./imgs/img_cli.png)
+
+7. MS teams notification (ensure webhook is updated on line #12  )
+   ![notifation](./imgs/img_notification.png)
